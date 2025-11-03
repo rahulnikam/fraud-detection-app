@@ -1,6 +1,6 @@
 import random
 from datetime import datetime, timedelta
-from scripts.db_connection import get_db_connection
+from data.db_connection import get_db_connection
 
 # ---------------------------
 # 🔧 MySQL Database Connection

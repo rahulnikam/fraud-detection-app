@@ -6,10 +6,8 @@ from sklearn.metrics import classification_report
 import joblib
 from imblearn.over_sampling import SMOTE
 
-# Import your shared connection utility and feature engineering class
-from scripts.db_connection import get_db_connection
+from data.db_connection import get_db_connection
 from ml_model.feature_engineering import FraudFeatureEngineer
-from imblearn.over_sampling import RandomOverSampler
 
 class FraudModelTrainer:
     def __init__(self, model_path="models/random_forest.pkl"):
