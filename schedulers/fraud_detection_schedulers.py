@@ -11,6 +11,6 @@ scheduler = BackgroundScheduler()
 scheduler.add_job(retrain_fraud_model, 'interval', seconds=10)
 scheduler.start()
 
-print("Scheduler started! Retraining every 30 seconds...")
+print("Scheduler started! Retraining every 10 seconds...")
 while True:
     pass  # keep app alive
